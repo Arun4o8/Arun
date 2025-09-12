@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Arun P - XR Engineer Portfolio</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+    :root {
+      --primary-neon: #00f6ff;
+      --secondary-neon: #a855f7;
+    }
+    .neon-glow-primary {
+      box-shadow: 0 0 5px var(--primary-neon), 0 0 15px var(--primary-neon), 0 0 30px var(--primary-neon);
+    }
+    .neon-glow-secondary {
+      box-shadow: 0 0 5px var(--secondary-neon), 0 0 15px var(--secondary-neon), 0 0 30px var(--secondary-neon);
+    }
+    .text-glow-primary {
+      text-shadow: 0 0 5px var(--primary-neon), 0 0 10px var(--primary-neon);
+    }
+    .text-glow-secondary {
+      text-shadow: 0 0 5px var(--secondary-neon), 0 0 10px var(--secondary-neon);
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white" style="font-family: 'Poppins', sans-serif;">
+<div class="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
+<div class="absolute inset-0 bg-gradient-to-br from-indigo-900/40 via-purple-900/30 to-black/50 opacity-80"></div>
+<div class="absolute top-0 left-0 w-96 h-96 bg-cyan-500/10 rounded-full filter blur-3xl opacity-30 animate-pulse"></div>
+<div class="absolute bottom-0 right-0 w-96 h-96 bg-purple-600/10 rounded-full filter blur-3xl opacity-30 animate-pulse animation-delay-2000"></div>
+<div class="relative z-10 flex flex-col items-center text-center p-4">
+<div class="mb-6">
+<img alt="Arun P Profile Photo" class="w-48 h-48 rounded-full object-cover border-4 border-cyan-400 neon-glow-primary" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQQnb_buo-u6AnnTFpYWIVV-hcizc_YTL3CIReQISWC3qHDEDaUI7sfQ9pV5qzcusfFZjVaJqNzH6LapprvVYWKhQI-ldlhfCyVIjcDduO6O5Fedlcfp_AQbCfGup3utiqDpSvyrl-yu_Pmu2AsBfV9199sQmioQ69-tGJR8VUqdKUKRnP-wQhdN_mz6xMOqhpgGS1nyZgX8HgY7LiqhEB9C0ng-V8H2VXn5K4FOIzpDph0oRShn3wzSzIavdNaFtvt6j-ZBGckKQ"/>
+</div>
+<h1 class="text-6xl font-black tracking-tighter mb-2 text-glow-primary">Arun P</h1>
+<p class="text-xl font-medium text-gray-300">CSE Student | XR Enthusiast | Future XR Engineer</p>
+<div class="mt-10 flex flex-col sm:flex-row gap-6">
+<button class="px-8 py-3 bg-cyan-400 text-black font-bold rounded-full text-lg uppercase tracking-wider transform hover:scale-105 transition-transform duration-300 neon-glow-primary">
+          Hire Me
+        </button>
+<button class="px-8 py-3 bg-transparent border-2 border-purple-500 text-purple-400 font-bold rounded-full text-lg uppercase tracking-wider transform hover:scale-105 transition-all duration-300 hover:bg-purple-500 hover:text-black hover:neon-glow-secondary">
+          Projects
+        </button>
+</div>
+</div>
+</div>
+
+</body></html>
