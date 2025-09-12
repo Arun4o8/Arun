@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Alex Chen - Aspiring XR Engineer</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+    :root {
+      --primary-blue: #00BFFF;
+      --primary-purple: #8A2BE2;
+      --dark-bg: #0A0A1A;
+      --card-bg: #111122;
+      --glow-color: var(--primary-blue);
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .skill-card {
+      transition: all 0.3s ease-in-out;
+    }
+    .skill-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px var(--glow-color), 0 0 30px var(--glow-color), 0 0 45px var(--glow-color);
+      border-color: var(--glow-color);
+    }
+    .skill-card:hover:nth-child(2) { --glow-color: var(--primary-purple); }
+    .skill-card:hover:nth-child(3) { --glow-color: #f7df1e; }.skill-card:hover:nth-child(4) { --glow-color: #FFFFFF; }.skill-card:hover:nth-child(5) { --glow-color: var(--primary-blue); }
+    .skill-card:hover:nth-child(6) { --glow-color: #FF6F00; }.skill-card:hover:nth-child(7) { --glow-color: #5CDB95; }.hero-gradient {
+        background-image: radial-gradient(circle at 50% 50%, rgba(10, 10, 26, 0.2) 0%, rgba(10, 10, 26, 0.9) 80%), linear-gradient(180deg, rgba(138, 43, 226, 0.1) 0%, rgba(0, 191, 255, 0.1) 100%);
+    }
+    .btn-primary {
+        @apply bg-gradient-to-r from-[var(--primary-blue)] to-[var(--primary-purple)] text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 ease-in-out;
+    }
+    .btn-primary:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px var(--primary-blue), 0 0 40px var(--primary-purple);
+    }
+    .nav-link {
+        @apply relative text-white after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-[var(--primary-blue)] after:to-[var(--primary-purple)] after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:transition-all after:duration-300;
+    }
+    .nav-link:hover:after {
+        @apply w-full;
+    }
+  </style>
+</head>
+<body class="bg-[var(--dark-bg)] text-white">
+<div class="relative min-h-screen overflow-x-hidden">
+<div class="absolute top-0 left-0 w-full h-full bg-grid-pattern opacity-10" style="background-image: linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);"></div>
+<div class="absolute top-0 left-0 w-96 h-96 bg-[var(--primary-blue)] rounded-full mix-blend-screen filter blur-3xl opacity-20 animate-pulse"></div>
+<div class="absolute bottom-0 right-0 w-96 h-96 bg-[var(--primary-purple)] rounded-full mix-blend-screen filter blur-3xl opacity-20 animate-pulse delay-1000"></div>
+<div class="relative z-10 flex flex-col min-h-screen">
+
+  <!-- Navigation Bar -->
+  <header class="absolute top-0 left-0 w-full z-20 p-4 bg-black/30 backdrop-blur-sm">
+    <nav class="flex justify-center space-x-8 text-lg font-medium">
+      <a href="index.html" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">Home</a>
+      <a href="h1.html" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">Arun P</a>
+      <a href="h3.html" class="text-cyan-400 hover:text-white transition-colors duration-300">Alex Chen</a>
+      <a href="h4.html" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">Anya Sharma</a>
+      <a href="h5.html" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">Journey</a>
+      <a href="h7.html" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">Contact</a>
+    </nav>
+  </header>
+
+<header class="flex items-center justify-between whitespace-nowrap px-10 py-5 bg-black/20 backdrop-blur-sm">
+<div class="flex items-center gap-4 text-white">
+<svg class="text-[var(--primary-blue)]" fill="none" height="24" viewBox="0 0 48 48" width="24" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_330)">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</g>
+<defs>
+<clipPath id="clip0_6_330"><rect fill="white" height="48" width="48"></rect></clipPath>
+</defs>
+</svg>
+<h2 class="text-xl font-bold tracking-wider">ALEX CHEN</h2>
+</div>
+<nav class="flex items-center gap-8">
+<a class="nav-link text-sm font-medium" href="#">ABOUT</a>
+<a class="nav-link text-sm font-medium" href="#">PROJECTS</a>
+<a class="nav-link text-sm font-medium" href="#">SKILLS</a>
+<a class="nav-link text-sm font-medium" href="#">CONTACT</a>
+<button class="btn-primary text-sm tracking-wider">RESUME</button>
+</nav>
+</header>
+<main class="flex-grow">
+<section class="min-h-[60vh] flex items-center justify-center text-center px-4">
+<div class="flex flex-col gap-6 items-center">
+<h1 class="text-6xl md:text-7xl font-black tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
+              Alex Chen
+            </h1>
+<p class="text-xl md:text-2xl font-light text-gray-300">
+              Aspiring XR Engineer &amp; Computer Science Student
+            </p>
+<button class="btn-primary mt-4 text-base tracking-wider">
+              Explore My Work
+            </button>
+</div>
+</section>
+<section class="py-20 px-4 sm:px-10" id="skills">
+<div class="max-w-5xl mx-auto">
+<h2 class="text-4xl font-bold text-center mb-12 tracking-wide">
+<span class="bg-clip-text text-transparent bg-gradient-to-r from-[var(--primary-blue)] to-[var(--primary-purple)]">My Tech Stack</span>
+</h2>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-6">
+<div class="skill-card flex flex-col items-center justify-center gap-3 rounded-lg border border-white/20 bg-[var(--card-bg)] p-6 aspect-square">
+<img alt="Python" class="w-12 h-12" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD74y_DB55gxfd8sqG01u-o-3Qu-s9DIFyJZXMZXLYOInhyem-Q3aSnW_FuoE37Tu2LRu5lJFhDOYziuiJfY4uxEDGaRcmudxJWxDZR-aCA792pjUOccPoRu1Aosugw9D6bd3UTvJASJq6WOWVwOIucoXpaSim7Qx2E9YbfHhwKR_NYbLiAfI6fMWrepcpoLUiPplUqjLSrGwjBwcS-XtG72Ixg3nXn5U9e8eSn_S7DOI-wxWvGBF7jJvnaBr0miGox5g3dFbF5G9A"/>
+<h3 class="font-semibold text-lg">Python</h3>
+</div>
+<div class="skill-card flex flex-col items-center justify-center gap-3 rounded-lg border border-white/20 bg-[var(--card-bg)] p-6 aspect-square">
+<img alt="C++" class="w-12 h-12" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoHHue5Hw-NI8171SjyWdO-AHhJwQ9Cs8za81IkS2rYPX0AYPSAfMB9l5yKLRDXZEW_3XxzOg7dPauJsluhvT56TEvk73XfmjedUeOrmTDvmWiYMwfeUrQP0LLvzexvuy23eK4BCwailllREphY_V6eSJjiqHjExd-nNet7jS-cgd6gy6KuyvkjvAAz1Mo8U9l6IYRzFU6-kBECYuyYID--_rKhjBIurOSmD9xkvfc2xhFxPdbq_LntDZwYh1HEmAS2EEqATSkxzw"/>
+<h3 class="font-semibold text-lg">C++</h3>
+</div>
+<div class="skill-card flex flex-col items-center justify-center gap-3 rounded-lg border border-white/20 bg-[var(--card-bg)] p-6 aspect-square">
+<img alt="JavaScript" class="w-12 h-12" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADHiOZqN0vTwczkRsLSyZOEU2x8YYMFZJD9eYYBOmYdmcmtp5Dvfqz1ePNTB3e5BCw2ULU8eGgw1lrLJAJ1U9Wj5cVft6E-qz0N0bJumRSgnDy0sau5evUIvzE3lalTDAw2G4GBc7ezLlc280KlSXUA2zUIu3diBU7xKefLYJJg4Og0fO3F6sNAkYJZWD-gqtlqhn5IB-f4ICEUc49qQZgpCvZeL7YPQiuOX8DXbTxTMXCSg9Y4HUPkt0atRwz4_DGy0uPmgZdf8A"/>
+<h3 class="font-semibold text-lg">JavaScript</h3>
+</div>
+<div class="skill-card flex flex-col items-center justify-center gap-3 rounded-lg border border-white/20 bg-[var(--card-bg)] p-6 aspect-square">
+<img alt="Unity" class="w-12 h-12" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4gD-CV720qAJxbsQFRfegHZYdx2XHLxInkoze0XTJA-YgtsywdGF7_fYpNgK7-UGtgvBbsLfoMkpCrGUOKRlUlBS3FIqBuJvMfjMqwsfNtByRFXWbM1yF5zrobotGOvMbNtE8cRXGUls4qzTpEUkPsfzmAiK_1LtyGew0SaCuZxMBNNTaqLkhhvE3YQCOMcBOyFm1n7vcyTUBtOWHoEEM4On3KA2Yk_Pcd0JKnEz6zAdAzW-7c7HOaqMtimT8T9Wtna8dbunHmzo"/>
+<h3 class="font-semibold text-lg">Unity</h3>
+</div>
+<div class="skill-card flex flex-col items-center justify-center gap-3 rounded-lg border border-white/20 bg-[var(--card-bg)] p-6 aspect-square">
+<svg class="w-12 h-12" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+<h3 class="font-semibold text-lg text-center">AR Foundation</h3>
+</div>
+<div class="skill-card flex flex-col items-center justify-center gap-3 rounded-lg border border-white/20 bg-[var(--card-bg)] p-6 aspect-square">
+<img alt="TensorFlow" class="w-12 h-12" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzESvhDEj5ai18GRDLWCoTE1Cqm_hdYZoc3b5evEi_YSEAVGtK_rfbV99-zQuUyJcXhBMgM6sZ9t0szGPBV1yJB2PDGF46tJMZLwoNS38W7npt_x0JM0YOlv2Zi2Z21a9ca3oMdWiMzbPjV6gJTG_zsaqSC9QJlYlKBFcgC3tVRtIjRnRrgRQ0iC4d8DxSqzb5HZo_jKZa0kUVNmu0qZ8LE-BD36GZgy5Y5-jSfUzAXHb0dsk8IgqTNEJpyRaeTv2ZuonwXz5k_KE"/>
+<h3 class="font-semibold text-lg">TensorFlow</h3>
+</div>
+<div class="skill-card flex flex-col items-center justify-center gap-3 rounded-lg border border-white/20 bg-[var(--card-bg)] p-6 aspect-square">
+<img alt="OpenCV" class="w-12 h-12" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzRfT1kIiWWlx8qQyx7jACxApNclFXv9ivQDmveZiV9xEqcIHTWQnq08Q-CLS9ZrgZAMD0_TzNrPoUmC-WsnjpbnykDhGEsAm6aY4VMRrLC4un3RFzwvQQLEQgvDQX4P2YfI4vCogQDxutOJ1PoyhXaptZ6eWiThLSZ_bR_WLbn4e_nObwsxMr3ZZ4BjkEgoyBbAqC2kSX1FHljql7adPfkFM4bzpWy5u-Gc_wAScXXjPYXsaU43QS6ovg7t7FW_rvR9bzA1WarUk"/>
+<h3 class="font-semibold text-lg">OpenCV</h3>
+</div>
+</div>
+</div>
+</section>
+</main>
+</div>
+</div>
+
+</body></html>
