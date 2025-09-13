@@ -9,129 +9,99 @@
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <style type="text/tailwindcss">
       :root {
-        --primary-blue: #00BFFF;
-        --primary-purple: #8A2BE2;
+        --neon-blue: #00bfff;
+        --neon-purple: #8a2be2;
       }
       body {
-        font-family: 'Poppins', sans-serif;
+        font-family: "Poppins", sans-serif;
       }
       .glassmorphism {
-        background: rgba(47, 35, 72, 0.5);
+        background: rgba(255, 255, 255, 0.05);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         border: 1px solid rgba(255, 255, 255, 0.1);
       }
-      .neon-glow {
-        box-shadow: 0 0 5px var(--primary-blue), 0 0 10px var(--primary-blue),
-          0 0 20px var(--primary-purple), 0 0 40px var(--primary-purple);
+      .neon-glow-blue {
+        box-shadow: 0 0 5px var(--neon-blue), 0 0 10px var(--neon-blue),
+          0 0 20px var(--neon-blue);
       }
-      .neon-glow-subtle {
-        box-shadow: 0 0 5px rgba(0, 191, 255, 0.3),
-          0 0 10px rgba(138, 43, 226, 0.3);
+      .neon-glow-purple {
+        box-shadow: 0 0 5px var(--neon-purple), 0 0 10px var(--neon-purple),
+          0 0 20px var(--neon-purple);
       }
-      .neon-glow-hover:hover {
-        box-shadow: 0 0 10px var(--primary-blue), 0 0 20px var(--primary-blue),
-          0 0 40px var(--primary-purple), 0 0 80px var(--primary-purple);
+      .text-glow-blue {
+        text-shadow: 0 0 2px var(--neon-blue), 0 0 5px var(--neon-blue);
       }
-      .form-input:focus {
-        outline: none;
-        border-color: var(--primary-blue);
-        box-shadow: 0 0 5px var(--primary-blue), 0 0 10px var(--primary-blue),
-          0 0 15px var(--primary-purple);
-      }
-      .social-icon:hover {
-        background: linear-gradient(45deg, var(--primary-blue), var(--primary-purple));
-        transform: translateY(-5px) scale(1.1);
-        box-shadow: 0 0 15px var(--primary-blue), 0 0 30px var(--primary-purple);
+      .text-glow-purple {
+        text-shadow: 0 0 2px var(--neon-purple), 0 0 5px var(--neon-purple);
       }
     </style>
   </head>
-  <body class="bg-[#100C1F] text-white">
+  <body class="bg-[#0a0a1a] text-white">
     <div class="relative min-h-screen overflow-x-hidden">
       <div
-        class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#100C1F] via-transparent to-[#100C1F] z-0"
-      >
-        <div
-          class="absolute top-1/4 left-1/4 w-96 h-96 bg-[var(--primary-blue)] rounded-full filter blur-3xl opacity-20 animate-pulse"
-        ></div>
-        <div
-          class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[var(--primary-purple)] rounded-full filter blur-3xl opacity-20 animate-pulse animation-delay-4000"
-        ></div>
-      </div>
+        class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-indigo-900/30 via-purple-900/30 to-black/30 opacity-50 z-0"
+      ></div>
+      <div
+        class="absolute -top-40 -left-40 w-96 h-96 bg-gradient-to-r from-[var(--neon-blue)] to-[var(--neon-purple)] rounded-full filter blur-3xl opacity-20 animate-pulse"
+      ></div>
+      <div
+        class="absolute -bottom-40 -right-40 w-96 h-96 bg-gradient-to-l from-[var(--neon-purple)] to-[var(--neon-blue)] rounded-full filter blur-3xl opacity-20 animate-pulse animation-delay-4000"
+      ></div>
 
-      <div class="relative z-10 flex flex-col min-h-screen">
-        <header
-          class="flex items-center justify-between whitespace-nowrap px-10 py-5 glassmorphism"
-        >
-          <div class="flex items-center gap-4">
-            <div class="w-8 h-8">
-              <svg
-                class="text-[var(--primary-blue)]"
-                fill="none"
-                viewBox="0 0 48 48"
-                xmlns="http://www.w3.org/2000/svg"
+      <div class="relative z-10 flex size-full min-h-screen flex-col">
+        <header class="fixed top-0 left-0 w-full z-50 glassmorphism">
+          <nav
+            class="container mx-auto flex items-center justify-between px-6 py-4"
+          >
+            <a class="text-2xl font-bold text-glow-blue" href="index.html"
+              >Arun P</a
+            >
+            <div class="hidden md:flex items-center gap-8">
+              <a
+                class="hover:text-[var(--neon-blue)] transition-colors duration-300"
+                href="index.html"
+                >Home</a
               >
-                <g clip-path="url(#clip0_6_319)">
-                  <path
-                    d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
-                    fill="currentColor"
-                  ></path>
-                </g>
-                <defs>
-                  <clipPath id="clip0_6_319">
-                    <rect fill="white" height="48" width="48"></rect>
-                  </clipPath>
-                </defs>
-              </svg>
+              <a
+                class="hover:text-[var(--neon-blue)] transition-colors duration-300"
+                href="projects.html"
+                >Projects</a
+              >
+              <a
+                class="hover:text-[var(--neon-blue)] transition-colors duration-300"
+                href="skills.html"
+                >Skills</a
+              >
+              <a
+                class="hover:text-[var(--neon-blue)] transition-colors duration-300"
+                href="contacts.html"
+                >Contact</a
+              >
             </div>
-            <h2 class="text-xl font-bold tracking-wider">ARUN P</h2>
-          </div>
-          <nav class="hidden md:flex items-center gap-8">
             <a
-              class="text-sm font-medium hover:text-[var(--primary-blue)] transition-colors"
-              href="#"
-              >About</a
-            >
-            <a
-              class="text-sm font-medium hover:text-[var(--primary-blue)] transition-colors"
-              href="#"
-              >Projects</a
-            >
-            <a
-              class="text-sm font-medium hover:text-[var(--primary-blue)] transition-colors"
-              href="#"
-              >Skills</a
-            >
-            <a class="text-sm font-medium text-[var(--primary-blue)]" href="#"
-              >Contact</a
+              class="hidden md:block px-6 py-2 rounded-lg text-sm font-semibold glassmorphism border border-purple-500/30 text-white hover:text-[var(--neon-blue)] transition-colors duration-300"
+              href="Resume.html"
+              >Resume</a
             >
           </nav>
-          <div class="hidden md:flex items-center gap-4">
-            <div
-              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-[var(--primary-purple)]"
-              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCxsrc2hMtBbpR1Rs2mkqgpALDH_wJskmqkC...
-"'
-            ></div>
-            <a
-              class="min-w-[100px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-transparent border-2 border-[var(--primary-purple)] text-base font-bold text-[var(--primary-purple)] tracking-wide transition-all duration-300 hover:bg-[var(--primary-purple)] hover:text-white"
-              href="#"
-            >
-              <span class="truncate">Resume</span>
-            </a>
-          </div>
         </header>
 
         <main class="flex-grow pt-24 pb-12">
           <div class="container mx-auto p-6 md:p-12 text-center">
-            <h1 class="text-4xl md:text-5xl font-extrabold mb-8 text-glow-blue">
+            <h1
+              class="text-4xl md:text-5xl font-extrabold mb-8 text-glow-blue"
+            >
               Get In Touch
             </h1>
-            <p class="text-gray-300 text-lg md:text-xl mb-12 max-w-2xl mx-auto">
+            <p
+              class="text-gray-300 text-lg md:text-xl mb-12 max-w-2xl mx-auto"
+            >
               I'm always open to new opportunities and collaborations. Feel free
               to reach out and let's create something amazing together.
             </p>
@@ -141,7 +111,9 @@
             >
               <form class="space-y-6">
                 <div>
-                  <label class="block text-left text-gray-300 mb-2" for="name"
+                  <label
+                    class="block text-left text-gray-300 mb-2"
+                    for="name"
                     >Name</label
                   >
                   <input
@@ -152,7 +124,9 @@
                   />
                 </div>
                 <div>
-                  <label class="block text-left text-gray-300 mb-2" for="email"
+                  <label
+                    class="block text-left text-gray-300 mb-2"
+                    for="email"
                     >Email</label
                   >
                   <input
@@ -176,7 +150,7 @@
                   ></textarea>
                 </div>
                 <button
-                  class="w-full px-6 py-3 rounded-full font-semibold bg-[var(--primary-blue)] text-black transition-transform duration-300 hover:scale-105 neon-glow-hover"
+                  class="w-full px-6 py-3 rounded-full font-semibold bg-[var(--neon-blue)] text-black transition-transform duration-300 hover:scale-105 neon-glow-hover"
                   type="submit"
                 >
                   Send Message
@@ -241,7 +215,7 @@
           <div
             class="container mx-auto px-6 text-center text-gray-400 text-sm"
           >
-            <p>&copy; 2024 Arun P. All rights reserved.</p>
+            <p>© 2024 Arun P. All rights reserved.</p>
           </div>
         </footer>
       </div>
