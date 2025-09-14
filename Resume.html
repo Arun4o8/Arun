@@ -1,200 +1,163 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Arun P - Resume</title>
-    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <style type="text/tailwindcss">
+<html><head>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Poppins%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<meta charset="utf-8"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
       :root {
-        --neon-blue: #00bfff;
-        --neon-purple: #8a2be2;
+        --primary-color: #5b13ec;
       }
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-      .glassmorphism {
-        background: rgba(255, 255, 255, 0.05);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-      }
-      .neon-glow-blue {
-        box-shadow: 0 0 5px var(--neon-blue), 0 0 10px var(--neon-blue),
-          0 0 20px var(--neon-blue);
-      }
-      .neon-glow-purple {
-        box-shadow: 0 0 5px var(--neon-purple), 0 0 10px var(--neon-purple),
-          0 0 20px var(--neon-purple);
-      }
-      .text-glow-blue {
-        text-shadow: 0 0 2px var(--neon-blue), 0 0 5px var(--neon-blue);
-      }
-      .text-glow-purple {
-        text-shadow: 0 0 2px var(--neon-purple), 0 0 5px var(--neon-purple);
+      .glow {
+        box-shadow: 0 0 5px var(--primary-color), 0 0 10px var(--primary-color), 0 0 20px var(--primary-color), 0 0 40px var(--primary-color);
       }
     </style>
-  </head>
-  <body class="bg-[#0a0a1a] text-white">
-    <div class="relative min-h-screen overflow-x-hidden">
-      <div
-        class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-indigo-900/30 via-purple-900/30 to-black/30 opacity-50 z-0"
-      ></div>
-      <div
-        class="absolute -top-40 -left-40 w-96 h-96 bg-gradient-to-r from-[var(--neon-blue)] to-[var(--neon-purple)] rounded-full filter blur-3xl opacity-20 animate-pulse"
-      ></div>
-      <div
-        class="absolute -bottom-40 -right-40 w-96 h-96 bg-gradient-to-l from-[var(--neon-purple)] to-[var(--neon-blue)] rounded-full filter blur-3xl opacity-20 animate-pulse animation-delay-4000"
-      ></div>
+</head>
+<body style="font-family: Poppins, 'Noto Sans', sans-serif;">
+<div class="relative flex size-full min-h-screen flex-col bg-[#110d1a] text-white dark group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#2f2348] px-10 py-4">
+<div class="flex items-center gap-4">
+<div class="size-8 text-[var(--primary-color)]">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_319)">
+<path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" fill="currentColor"></path>
+</g>
+<defs>
+<clipPath id="clip0_6_319"><rect fill="white" height="48" width="48"></rect></clipPath>
+</defs>
+</svg>
+</div>
+<h2 class="text-xl font-bold leading-tight tracking-[-0.015em]">Arun P</h2>
+</div>
+<nav class="flex items-center gap-8">
+<div class="hidden items-center gap-8 md:flex">
+<a class="text-sm font-medium leading-normal transition-colors hover:text-[var(--primary-color)]" href="index.html">About</a>
+<a class="text-sm font-medium leading-normal transition-colors hover:text-[var(--primary-color)]" href="projects.html">Projects</a>
+<a class="text-sm font-medium leading-normal text-[var(--primary-color)]" href="Resume.html">Resume</a>
+<a class="text-sm font-medium leading-normal transition-colors hover:text-[var(--primary-color)]" href="contacts.html">Contact</a>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex h-10 w-10 items-center justify-center rounded-full bg-[#1e162f] text-white transition-colors hover:bg-[var(--primary-color)] hover:text-white">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"></path>
+</svg>
+</button>
+<button class="flex h-10 w-10 items-center justify-center rounded-full bg-[#1e162f] text-white transition-colors hover:bg-[var(--primary-color)] hover:text-white">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"></path>
+</svg>
+</button>
+<button class="flex h-10 w-10 items-center justify-center rounded-full bg-[#1e162f] text-white transition-colors hover:bg-[var(--primary-color)] hover:text-white">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"></path>
+</svg>
+</button>
+</div>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAjPeQtrqNNiRoc2tSOW8U9UA0waq6WRPJYg2sUCQ_wxZUCHCs78xhLWvTV_fUkbclguYfOJFeB8OYUOkbtnH7JsY6AFE5hGX4IbjobKP5WkBmdNNt1f9cgWoqwrZSj8r77Nt2lmfe0aeOWLOQfwnMBJ1OXA8N0JQ8TSQ8q5L8owyiIwTPlohsWcdTjdhhKKX7b_5Uzy3-ADklYva0DtfQdqeCRjxrUuEgjSJxzEzgWvhAvRHJBrFInAwhxuIqdLu5EVT9yQ-Y1cic");'></div>
+</nav>
+</header>
+<main class="flex-1 px-40 py-10">
+<div class="layout-content-container mx-auto flex max-w-4xl flex-col">
+<div class="flex flex-wrap items-center justify-between gap-4 p-4">
+<h1 class="text-4xl font-bold leading-tight tracking-tighter">Resume</h1>
+<button class="glow flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-[var(--primary-color)] px-6 py-3 text-base font-bold text-white shadow-lg transition-all hover:bg-violet-700 hover:shadow-xl">
+<span class="truncate">Download Resume</span>
+</button>
+</div>
+<div class="mt-12 space-y-12">
+<section>
+<h2 class="mb-6 text-2xl font-bold leading-tight tracking-tight text-[var(--primary-color)]">Education</h2>
+<div class="relative grid grid-cols-[auto_1fr] gap-x-6">
+<div class="flex flex-col items-center">
+<div class="flex size-10 items-center justify-center rounded-full bg-[#1e162f]">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M251.76,88.94l-120-64a8,8,0,0,0-7.52,0l-120,64a8,8,0,0,0,0,14.12L32,117.87v48.42a15.91,15.91,0,0,0,4.06,10.65C49.16,191.53,78.51,216,128,216a130,130,0,0,0,48-8.76V240a8,8,0,0,0,16,0V199.51a115.63,115.63,0,0,0,27.94-22.57A15.91,15.91,0,0,0,224,166.29V117.87l27.76-14.81a8,8,0,0,0,0-14.12ZM128,200c-43.27,0-68.72-21.14-80-33.71V126.4l76.24,40.66a8,8,0,0,0,7.52,0L176,143.47v46.34C163.4,195.69,147.52,200,128,200Zm80-33.75a97.83,97.83,0,0,1-16,14.25V134.93l16-8.53ZM188,118.94l-.22-.13-56-29.87a8,8,0,0,0-7.52,14.12L171,128l-43,22.93L25,96,128,41.07,231,96Z"></path>
+</svg>
+</div>
+<div class="w-0.5 grow bg-[#2f2348]"></div>
+</div>
+<div class="rounded-lg bg-[#1e162f]/50 p-6 backdrop-blur-sm">
+<p class="text-lg font-semibold">B.Tech in Computer Science and Engineering</p>
+<p class="text-base text-gray-400">2020 - 2024</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-0.5 grow bg-[#2f2348]"></div>
+<div class="flex size-10 items-center justify-center rounded-full bg-[#1e162f]">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M251.76,88.94l-120-64a8,8,0,0,0-7.52,0l-120,64a8,8,0,0,0,0,14.12L32,117.87v48.42a15.91,15.91,0,0,0,4.06,10.65C49.16,191.53,78.51,216,128,216a130,130,0,0,0,48-8.76V240a8,8,0,0,0,16,0V199.51a115.63,115.63,0,0,0,27.94-22.57A15.91,15.91,0,0,0,224,166.29V117.87l27.76-14.81a8,8,0,0,0,0-14.12ZM128,200c-43.27,0-68.72-21.14-80-33.71V126.4l76.24,40.66a8,8,0,0,0,7.52,0L176,143.47v46.34C163.4,195.69,147.52,200,128,200Zm80-33.75a97.83,97.83,0,0,1-16,14.25V134.93l16-8.53ZM188,118.94l-.22-.13-56-29.87a8,8,0,0,0-7.52,14.12L171,128l-43,22.93L25,96,128,41.07,231,96Z"></path>
+</svg>
+</div>
+</div>
+<div class="rounded-lg bg-[#1e162f]/50 p-6 backdrop-blur-sm">
+<p class="text-lg font-semibold">High School</p>
+<p class="text-base text-gray-400">2018 - 2020</p>
+</div>
+</div>
+</section>
+<section>
+<h2 class="mb-6 text-2xl font-bold leading-tight tracking-tight text-[var(--primary-color)]">Experience</h2>
+<div class="relative grid grid-cols-[auto_1fr] gap-x-6">
+<div class="flex flex-col items-center">
+<div class="flex size-10 items-center justify-center rounded-full bg-[#1e162f]">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M216,56H176V48a24,24,0,0,0-24-24H104A24,24,0,0,0,80,48v8H40A16,16,0,0,0,24,72V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V72A16,16,0,0,0,216,56ZM96,48a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96ZM216,72v41.61A184,184,0,0,1,128,136a184.07,184.07,0,0,1-88-22.38V72Zm0,128H40V131.64A200.19,200.19,0,0,0,128,152a200.25,200.25,0,0,0,88-20.37V200ZM104,112a8,8,0,0,1,8-8h32a8,8,0,0,1,0,16H112A8,8,0,0,1,104,112Z"></path>
+</svg>
+</div>
+</div>
+<div class="rounded-lg bg-[#1e162f]/50 p-6 backdrop-blur-sm">
+<p class="text-lg font-semibold">XR Engineer Intern</p>
+<p class="text-base text-gray-400">E16 AI XR Technologies Pvt. Ltd. | July 2025 - Aug 2025</p>
+</div>
+</div>
+</section>
+<section>
+<h2 class="mb-6 text-2xl font-bold leading-tight tracking-tight text-[var(--primary-color)]">Hackathons</h2>
+<div class="relative grid grid-cols-[auto_1fr] gap-x-6 gap-y-6">
+<div class="flex flex-col items-center">
+<div class="flex size-10 items-center justify-center rounded-full bg-[#1e162f]">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M232,64H208V56a16,16,0,0,0-16-16H64A16,16,0,0,0,48,56v8H24A16,16,0,0,0,8,80V96a40,40,0,0,0,40,40h3.65A80.13,80.13,0,0,0,120,191.61V216H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16H136V191.58c31.94-3.23,58.44-25.64,68.08-55.58H208a40,40,0,0,0,40-40V80A16,16,0,0,0,232,64ZM48,120A24,24,0,0,1,24,96V80H48v32q0,4,.39,8Zm144-8.9c0,35.52-28.49,64.64-63.51,64.9H128a64,64,0,0,1-64-64V56H192ZM232,96a24,24,0,0,1-24,24h-.5a81.81,81.81,0,0,0,.5-8.9V80h24Z"></path>
+</svg>
+</div>
+<div class="w-0.5 grow bg-[#2f2348]"></div>
+</div>
+<div class="rounded-lg bg-[#1e162f]/50 p-6 backdrop-blur-sm">
+<p class="text-lg font-semibold">Hackathon 1</p>
+<p class="text-base text-gray-400">Won 1st Place</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-0.5 grow bg-[#2f2348]"></div>
+<div class="flex size-10 items-center justify-center rounded-full bg-[#1e162f]">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M232,64H208V56a16,16,0,0,0-16-16H64A16,16,0,0,0,48,56v8H24A16,16,0,0,0,8,80V96a40,40,0,0,0,40,40h3.65A80.13,80.13,0,0,0,120,191.61V216H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16H136V191.58c31.94-3.23,58.44-25.64,68.08-55.58H208a40,40,0,0,0,40-40V80A16,16,0,0,0,232,64ZM48,120A24,24,0,0,1,24,96V80H48v32q0,4,.39,8Zm144-8.9c0,35.52-28.49,64.64-63.51,64.9H128a64,64,0,0,1-64-64V56H192ZM232,96a24,24,0,0,1-24,24h-.5a81.81,81.81,0,0,0,.5-8.9V80h24Z"></path>
+</svg>
+</div>
+<div class="w-0.5 grow bg-[#2f2348]"></div>
+</div>
+<div class="rounded-lg bg-[#1e162f]/50 p-6 backdrop-blur-sm">
+<p class="text-lg font-semibold">Hackathon 2</p>
+<p class="text-base text-gray-400">Won 2nd Place</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-0.5 grow bg-[#2f2348]"></div>
+<div class="flex size-10 items-center justify-center rounded-full bg-[#1e162f]">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M232,64H208V56a16,16,0,0,0-16-16H64A16,16,0,0,0,48,56v8H24A16,16,0,0,0,8,80V96a40,40,0,0,0,40,40h3.65A80.13,80.13,0,0,0,120,191.61V216H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16H136V191.58c31.94-3.23,58.44-25.64,68.08-55.58H208a40,40,0,0,0,40-40V80A16,16,0,0,0,232,64ZM48,120A24,24,0,0,1,24,96V80H48v32q0,4,.39,8Zm144-8.9c0,35.52-28.49,64.64-63.51,64.9H128a64,64,0,0,1-64-64V56H192ZM232,96a24,24,0,0,1-24,24h-.5a81.81,81.81,0,0,0,.5-8.9V80h24Z"></path>
+</svg>
+</div>
+</div>
+<div class="rounded-lg bg-[#1e162f]/50 p-6 backdrop-blur-sm">
+<p class="text-lg font-semibold">Hackathon 3 WIN</p>
+<p class="text-base text-gray-400">Participated</p>
+</div>
+</div>
+</section>
+</div>
+</div>
+</main>
+</div>
+</div>
 
-      <div class="relative z-10 flex size-full min-h-screen flex-col">
-        <header class="fixed top-0 left-0 w-full z-50 glassmorphism">
-          <nav
-            class="container mx-auto flex items-center justify-between px-6 py-4"
-          >
-            <a class="text-2xl font-bold text-glow-blue" href="#">Arun P</a>
-            <div class="hidden md:flex items-center gap-8">
-              <a
-                class="hover:text-[var(--neon-blue)] transition-colors duration-300"
-                href="index.html"
-                >Home</a
-              >
-              <a
-                class="hover:text-[var(--neon-blue)] transition-colors duration-300"
-                href="projects.html"
-                >Projects</a
-              >
-              <a
-                class="hover:text-[var(--neon-blue)] transition-colors duration-300"
-                href="skills.html"
-                >Skills</a
-              >
-              <a
-                class="hover:text-[var(--neon-blue)] transition-colors duration-300"
-                href="contacts.html"
-                >Contact</a
-              >
-            </div>
-            <a
-              class="hidden md:block px-6 py-2 rounded-lg text-sm font-semibold glassmorphism border border-purple-500/30 text-white hover:text-[var(--neon-blue)] transition-colors duration-300"
-              href="Resume.html"
-              >Resume</a
-            >
-          </nav>
-        </header>
-
-        <main class="flex-grow pt-24 pb-12">
-          <div class="container mx-auto p-6">
-            <h1 class="text-4xl md:text-5xl font-extrabold text-center mb-12 text-glow-blue">
-              My Resume
-            </h1>
-            <div class="max-w-4xl mx-auto space-y-12">
-              <section class="glassmorphism p-8 rounded-2xl border border-white/10">
-                <h2 class="text-3xl font-bold text-[var(--neon-purple)] mb-6">Experience</h2>
-                <div class="space-y-6">
-                  <div>
-                    <h3 class="text-xl font-semibold text-gray-200">Software Engineer Intern</h3>
-                    <p class="text-gray-400">Company XYZ | Jan 2023 - Jun 2023</p>
-                    <ul class="list-disc list-inside mt-2 text-gray-300">
-                      <li>
-                        Developed a feature-rich mobile application using React Native,
-                        improving user engagement by 20%.
-                      </li>
-                      <li>
-                        Collaborated with a team of 5 engineers to deliver weekly
-                        sprints on time.
-                      </li>
-                      <li>
-                        Implemented RESTful APIs to connect the front-end with
-                        back-end services.
-                      </li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h3 class="text-xl font-semibold text-gray-200">Web Developer</h3>
-                    <p class="text-gray-400">Freelance | 2022</p>
-                    <ul class="list-disc list-inside mt-2 text-gray-300">
-                      <li>
-                        Designed and built responsive websites for various clients.
-                      </li>
-                      <li>
-                        Managed and optimized databases for high-traffic sites.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </section>
-
-              <section class="glassmorphism p-8 rounded-2xl border border-white/10">
-                <h2 class="text-3xl font-bold text-[var(--neon-purple)] mb-6">Education</h2>
-                <div class="space-y-4">
-                  <div>
-                    <h3 class="text-xl font-semibold text-gray-200">
-                      B.Tech in Computer Science & Engineering
-                    </h3>
-                    <p class="text-gray-400">
-                      Your University Name | 2021 - 2025
-                    </p>
-                    <p class="text-gray-300 mt-1">
-                      Specialized in Software Development and AI.
-                    </p>
-                  </div>
-                </div>
-              </section>
-
-              <section class="glassmorphism p-8 rounded-2xl border border-white/10">
-                <h2 class="text-3xl font-bold text-[var(--neon-purple)] mb-6">Skills</h2>
-                <div class="flex flex-wrap gap-4">
-                  <span class="bg-gray-800 text-gray-200 px-4 py-1 rounded-full text-sm">HTML</span>
-                  <span class="bg-gray-800 text-gray-200 px-4 py-1 rounded-full text-sm">CSS</span>
-                  <span class="bg-gray-800 text-gray-200 px-4 py-1 rounded-full text-sm">JavaScript</span>
-                  <span class="bg-gray-800 text-gray-200 px-4 py-1 rounded-full text-sm">React</span>
-                  <span class="bg-gray-800 text-gray-200 px-4 py-1 rounded-full text-sm">Node.js</span>
-                  <span class="bg-gray-800 text-gray-200 px-4 py-1 rounded-full text-sm">Python</span>
-                  <span class="bg-gray-800 text-gray-200 px-4 py-1 rounded-full text-sm">C++</span>
-                  <span class="bg-gray-800 text-gray-200 px-4 py-1 rounded-full text-sm">SQL</span>
-                  <span class="bg-gray-800 text-gray-200 px-4 py-1 rounded-full text-sm">Git</span>
-                </div>
-              </section>
-
-              <section class="glassmorphism p-8 rounded-2xl border border-white/10">
-                <h2 class="text-3xl font-bold text-[var(--neon-purple)] mb-6">Certifications</h2>
-                <ul class="list-disc list-inside text-gray-300 space-y-2">
-                  <li>
-                    Certified Web Developer - W3Schools
-                  </li>
-                  <li>
-                    AWS Certified Cloud Practitioner - Amazon Web Services (AWS)
-                  </li>
-                </ul>
-              </section>
-
-              <section class="glassmorphism p-8 rounded-2xl border border-white/10">
-                <h2 class="text-3xl font-bold text-[var(--neon-purple)] mb-6">Awards</h2>
-                <ul class="list-disc list-inside text-gray-300 space-y-2">
-                  <li>Hackathon 1 - Won 1st Place</li>
-                  <li>Hackathon 2 - Won 2nd Place</li>
-                </ul>
-              </section>
-            </div>
-          </div>
-        </main>
-
-        <footer class="glassmorphism py-8">
-          <div
-            class="container mx-auto px-6 text-center text-gray-400 text-sm"
-          >
-            <p>&copy; 2024 Arun P. All rights reserved.</p>
-          </div>
-        </footer>
-      </div>
-    </div>
-  </body>
-</html>
+</body></html>
