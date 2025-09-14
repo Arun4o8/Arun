@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Arun P - XR Engineer</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style type="text/tailwindcss">
+      :root {
+        --neon-blue: #00f6ff;
+        --neon-purple: #9d00ff;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .glow-effect {
+        box-shadow: 0 0 5px var(--neon-blue), 0 0 15px var(--neon-blue),
+          0 0 30px var(--neon-blue), 0 0 60px var(--neon-blue);
+      }
+      .glow-effect-purple {
+        box-shadow: 0 0 5px var(--neon-purple), 0 0 15px var(--neon-purple),
+          0 0 30px var(--neon-purple);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <div
+      class="relative min-h-screen flex items-center justify-center bg-grid-white/[0.05] overflow-hidden"
+    >
+      <div
+        class="absolute top-0 left-0 w-96 h-96 bg-[var(--neon-blue)] rounded-full mix-blend-screen filter blur-3xl opacity-20 animate-pulse"
+      ></div>
+      <div
+        class="absolute bottom-0 right-0 w-96 h-96 bg-[var(--neon-purple)] rounded-full mix-blend-screen filter blur-3xl opacity-20 animate-pulse animation-delay-4000"
+      ></div>
+      <div class="relative z-10 w-full max-w-lg mx-auto">
+        <div
+          class="bg-black/30 backdrop-blur-xl border border-white/10 rounded-2xl p-8 text-center transition-all duration-300 hover:border-white/20 hover:shadow-2xl hover:shadow-[var(--neon-blue)]/10"
+        >
+          <div class="flex flex-col items-center">
+            <div class="relative mb-6">
+              <div
+                class="w-32 h-32 rounded-full bg-cover bg-center border-2 border-[var(--neon-blue)] glow-effect"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCHii_7YUfOJ9KDkl5wH9CmthWhAL01xYC3huVoKr01nFsu2OTsEe8yCmu2cs97rEYqaudavWbQ-59VDSrJ2Wy1iFDKc0yoPE0GezFOBy8awD1ElNAkdohguzwLikSjAp72Qa9Hy6c74fIW-SR9eTAj5obcPAd4B4Nk3_7GG9ijAmDcSsXhRVBmhf3kSXUeuHG8YbUQDlIf5S6V6kqhLfSV5q17P9AGI7dFzPAlUMCOSia1deKe5nBnfvCffZhJr9OPvSiA0LglGwM");'
+              ></div>
+              <div
+                class="absolute -bottom-2 -right-2 w-8 h-8 bg-[var(--neon-purple)] rounded-full flex items-center justify-center text-xs font-bold glow-effect-purple"
+              >
+                XR
+              </div>
+            </div>
+            <h1 class="text-3xl font-bold tracking-wider">Arun P</h1>
+            <p class="text-[var(--neon-blue)] font-medium mt-1">
+              Aspiring XR Engineer
+            </p>
+            <p class="text-gray-400 text-sm mt-1">
+              B.E CSE - Sriram Engineering College
+            </p>
+            <div
+              class="w-20 h-px bg-gradient-to-r from-transparent via-[var(--neon-blue)] to-transparent my-6"
+            ></div>
+            <p class="text-gray-300 leading-relaxed max-w-md mx-auto">
+              I'm a Computer Science student with a passion for XR, AI, and
+              AR/VR technologies. I'm dedicated to creating immersive and
+              innovative experiences that push the boundaries of what's
+              possible.
+            </p>
+            <div class="flex gap-4 mt-8 w-full justify-center">
+              <a href="projects.html" class="flex-1 max-w-xs">
+                <button
+                  class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-[var(--neon-purple)] to-[var(--neon-blue)] group-hover:from-[var(--neon-purple)] group-hover:to-[var(--neon-blue)] hover:text-white focus:ring-4 focus:outline-none focus:ring-cyan-800 w-full"
+                >
+                  <span
+                    class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-gray-900 rounded-md group-hover:bg-opacity-0 text-white w-full"
+                  >
+                    View Projects
+                  </span>
+                </button>
+              </a>
+              <a href="contacts.html" class="flex-1 max-w-xs">
+                <button
+                  class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-white rounded-lg group border border-white/20 hover:border-transparent hover:bg-gradient-to-br hover:from-[var(--neon-purple)] hover:to-[var(--neon-blue)] focus:ring-4 focus:outline-none focus:ring-cyan-800 w-full"
+                >
+                  <span
+                    class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-gray-900 rounded-md group-hover:bg-opacity-0 w-full"
+                  >
+                    Contact Me
+                  </span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
