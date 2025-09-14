@@ -5,7 +5,7 @@
     <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
     <link
       as="style"
-      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Poppins:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;family=Noto+Sans:wght@400;500;700;900"
+      href="https://fonts.googleapis.com/css2?display=swap&family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Noto+Sans:wght@400;500;700;900"
       onload="this.rel='stylesheet'"
       rel="stylesheet"
     />
@@ -49,7 +49,11 @@
         z-index: -1;
         margin: -1px;
         border-radius: inherit;
-        background: linear-gradient(to right, var(--neon-blue), var(--neon-purple));
+        background: linear-gradient(
+          to right,
+          var(--neon-blue),
+          var(--neon-purple)
+        );
         transition: all 0.3s ease-in-out;
         opacity: 0.5;
       }
@@ -64,7 +68,11 @@
         box-shadow: 0 0 15px var(--neon-blue), 0 0 30px var(--neon-purple);
       }
       .view-more-btn {
-        background: linear-gradient(to right, var(--neon-blue), var(--neon-purple));
+        background: linear-gradient(
+          to right,
+          var(--neon-blue),
+          var(--neon-purple)
+        );
         transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
       }
       .view-more-btn:hover {
@@ -81,7 +89,11 @@
         >
           <div class="flex items-center gap-4">
             <div class="size-8 text-[var(--neon-blue)]">
-              <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   d="M12 2L2 7V17L12 22L22 17V7L12 2ZM4 8.24L12 12.51L20 8.24V15.76L12 20L4 15.76V8.24ZM12 4.47L18.93 8L12 11.53L5.07 8L12 4.47Z"
                 ></path>
@@ -91,53 +103,62 @@
           </div>
           <nav class="flex flex-1 justify-end gap-8">
             <div class="flex items-center gap-10 text-base font-medium">
-              <a class="hover:text-[var(--neon-blue)] transition-colors" href="index.html"
+              <a
+                class="hover:text-[var(--neon-blue)] transition-colors"
+                href="index.html"
                 >About</a
               >
               <a class="text-[var(--neon-blue)] font-semibold" href="projects.html"
                 >Projects</a
               >
-              <a class="hover:text-[var(--neon-blue)] transition-colors" href="skills.html"
+              <a
+                class="hover:text-[var(--neon-blue)] transition-colors"
+                href="skills.html"
                 >Skills</a
               >
-              <a class="hover:text-[var(--neon-blue)] transition-colors" href="contacts.html"
+              <a
+                class="hover:text-[var(--neon-blue)] transition-colors"
+                href="contacts.html"
                 >Contact</a
               >
             </div>
-            <button
+
+            <a
+              href="#"
               class="flex min-w-[100px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-transparent border-2 border-[var(--neon-blue)] text-base font-bold tracking-wide transition-all hover:bg-[var(--neon-blue)] hover:shadow-[0_0_15px_var(--neon-blue)]"
-                href="Resume.html"
-              >
+            >
               <span class="truncate">Resume</span>
-            </button>
+            </a>
           </nav>
         </header>
-
-        <main class="flex-grow pt-20 pb-12">
-          <div
-            class="container mx-auto px-6 py-12 text-center flex flex-col items-center"
-          >
-            <h1 class="text-5xl font-extrabold mb-8 text-[var(--neon-blue)]">
-              My Projects
-            </h1>
-            <p class="text-xl text-gray-400 max-w-2xl mb-16">
-              A collection of my work, showcasing my skills in XR development,
-              game design, and AI.
-            </p>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <main class="flex flex-1 justify-center py-16 px-4 sm:px-6 lg:px-8">
+          <div class="layout-content-container flex flex-col max-w-7xl flex-1 items-center">
+            <div class="text-center mb-12">
+              <h1
+                class="text-5xl font-bold tracking-tighter leading-tight bg-clip-text text-transparent bg-gradient-to-r from-[var(--neon-blue)] to-[var(--neon-purple)]"
+              >
+                My Projects
+              </h1>
+              <p
+                class="text-[#a492c9] text-lg font-normal leading-normal mt-4 max-w-2xl mx-auto"
+              >
+                Explore a selection of my projects, showcasing my skills and passion for XR
+                engineering and futuristic technologies.
+              </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div class="flex flex-col gap-4 p-5 glassmorphism neon-border hover-glow">
                 <div
                   class="w-full aspect-square bg-cover bg-center rounded-lg"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCxsrc2hMtBbpR1Rs2mkqgpALDH_wJskmqkCJPW3AKOwcLzoV_G3BTON8acNnT5Q6eS1xK8eH5aO8G_Dq7qV05v2P2sP73c4x-LqCj2qA_1yW93y0K4a-S-2d5c7bW5a-M-M2bA-4wX4uB5c5wz4K4a-S-2d5c7bW5a-M-M2bA-4wX4uB5c5wz4...
-")'
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB3Y0g2F8cmqT-Qj7l9Vs0qGWlBIxWRtLBZg0QpsT-v6p2JbA5vQ5fluC5SPLB5FnuLK2rYncIhTOSa_fiVQPtXvsEnrVQD2Tz78vEIqe41nZ-5aJ6M-Jm-u_MbL46RxkG4TDIC_TQvji3GBWp7Et166dC2IXIGzZU1niypB5evEgT-4X1M_kV9OhGP4-aB7UGeh6rpZMchtQIg0IgBMmxxwQ8DlhaSNDxtZby3s7qNm4ewRhPOUq3m6m9DkFy6oKfLSRCib5zLd_U");'
                 ></div>
                 <div class="flex flex-col flex-grow">
                   <h3 class="text-xl font-semibold leading-normal">
-                    VR Medical Training Simulator
+                    AR Robot Assembly Kit
                   </h3>
                   <p class="text-[#a492c9] text-sm font-normal leading-normal mt-2 flex-grow">
-                    An immersive VR experience for medical students to practice
-                    surgical procedures in a risk-free environment.
+                    An augmented reality application that guides users through assembling a
+                    robot kit with interactive 3D models.
                   </p>
                 </div>
                 <button
@@ -146,21 +167,16 @@
                   View More
                 </button>
               </div>
-
               <div class="flex flex-col gap-4 p-5 glassmorphism neon-border hover-glow">
                 <div
                   class="w-full aspect-square bg-cover bg-center rounded-lg"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBirxIfbHBsWM2qhlLkG-G7B7K15Ma9huQP7ssBy45M0pSUDZ34DgPXkcyqUQnNJNl65EJ639FrH6kwmlg7vSCpGChQWJLqrm65mu9gg0TGVXTPUlHq7CIUbtQrlVnFkIihW26xM_VcL2QW9Fq...
-")'
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAb3IIWK3qBk3W7XUNXx5KPREAZdvQJxlBKHVw_SYVZh0L85sNXFNrs3wfpQOn8IVWtJ_1tH0D35gRX4Ox5BvsR9Zjb_RLTPiPVykw-dtQLDyQMLKw7rWIFgcfWuIdLFp7k41h9IHRnFznM6T_21ox8d18tgYVq38adwtrwoST3gR8uMYUPCE6JHGmZ6DK0Zuk5IiEMoBObb64GT6VkFL8HjhkcHmj0Gaj-6Q2FOP6M74u6R3OJIjLr1qmT6Kj0cjyAdAWB1cyVKpE");'
                 ></div>
                 <div class="flex flex-col flex-grow">
-                  <h3 class="text-xl font-semibold leading-normal">
-                    AR Smart Museum Guide
-                  </h3>
+                  <h3 class="text-xl font-semibold leading-normal">AR Treasure Hunt</h3>
                   <p class="text-[#a492c9] text-sm font-normal leading-normal mt-2 flex-grow">
-                    An augmented reality app that provides interactive
-                    information and 3D models of exhibits when a user points
-                    their phone at them.
+                    An AR game where users explore their surroundings to find virtual
+                    treasures using their mobile devices.
                   </p>
                 </div>
                 <button
@@ -169,20 +185,34 @@
                   View More
                 </button>
               </div>
-
               <div class="flex flex-col gap-4 p-5 glassmorphism neon-border hover-glow">
                 <div
                   class="w-full aspect-square bg-cover bg-center rounded-lg"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBf5v3fclDP8mrdllUQUMPL2T-kZo0-aSAOacZN5HzjErTNGKd26usFDIh_RVTo-h4APwt_RhcQ5uzpOTN3lhjBA2b1vpHD18CqXnE0iGj38Ica25vreo8Y_GqBL2Rx1qmBW5gdIOdl7X09CIg2Q6euzYngPZaEL5Z19KoOZH5rYqB3-57se4Q5ekAROXJ_eLAzjVhSu-54qJysvpw9K2psJXJH4MT_gP758896...
-")'
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBqwaEJUgMi04OObCP2ppObozwSC_vJ2dbj6caiIq2jN-SFZ_snWDIrGVFiLJC8Pncb2fwFjzw3oAnD1OqELH0UVilhyYaoz_17ERogbFE4FS8_KMNZKRnogUuwLMu2nyqY_2bUs_h3uAcovmVgsf5To77Uv21-H6Y8IpEm6PErpF_9fg50TYoWEgTYkHuxLsZnk39EN5brxwcrDyJ93VeWKldKw1UZCF3qcY7qs-xfYL6k7XvRVep25a9sP0zb1M3CirY0LpWRUXM");'
                 ></div>
                 <div class="flex flex-col flex-grow">
-                  <h3 class="text-xl font-semibold leading-normal">
-                    AI Assistant 'Sri Smart'
-                  </h3>
+                  <h3 class="text-xl font-semibold leading-normal">AI Assistant 'Sri Smart'</h3>
                   <p class="text-[#a492c9] text-sm font-normal leading-normal mt-2 flex-grow">
-                    A voice-activated AI assistant that helps users with daily
-                    tasks, providing information and controlling smart devices.
+                    A voice-activated AI assistant that helps users with daily tasks,
+                    providing information and controlling smart devices.
+                  </p>
+                </div>
+                <button
+                  class="view-more-btn mt-4 w-full rounded-md py-2 px-4 text-sm font-bold text-white"
+                >
+                  View More
+                </button>
+              </div>
+              <div class="flex flex-col gap-4 p-5 glassmorphism neon-border hover-glow">
+                <div
+                  class="w-full aspect-square bg-cover bg-center rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBf5v3fclDP8mrdllUQUMPL2T-kZo0-aSAOacZN5HzjErTNGKd26usFDIh_RVTo-h4APwt_RhcQ5uzpOTN3lhjBA2b1vpHD18CqXnE0iGj38Ica25vreo8Y_GqBL2Rx1qmBW5gdIOdl7X09CIg2Q6euzYngPZaEL5Z19KoOZH5rYqB3-57se4Q5ekAROXJ_eLAzjVhSu-54qJysvpw9K2psJXJH4MT_gP758896H3Q0CugXwt8biROs1JSAwmTTtzLU4dUxjYe3OfY");'
+                ></div>
+                <div class="flex flex-col flex-grow">
+                  <h3 class="text-xl font-semibold leading-normal">AR Lipstick Try-On</h3>
+                  <p class="text-[#a492c9] text-sm font-normal leading-normal mt-2 flex-grow">
+                    An AR application that allows users to virtually try on different lipstick
+                    shades using their device's camera.
                   </p>
                 </div>
                 <button
@@ -194,12 +224,6 @@
             </div>
           </div>
         </main>
-
-        <footer class="glassmorphism py-8">
-          <div class="container mx-auto px-6 text-center text-gray-400 text-sm">
-            <p>&copy; 2024 Arun P. All rights reserved.</p>
-          </div>
-        </footer>
       </div>
     </div>
   </body>
